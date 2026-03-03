@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Eduarda Martins | Desenvolvedora Full Stack</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navegacao">
+        <div class="nav-container">
+            <h2 class="logo">Maria.dev</h2>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <main id="inicio" class="cabecalho">
+        <div class="hero-container">
+            <img src="./img/maria.png" alt="Maria Eduarda Martins" class="foto-perfil">
+            
+            <h1>Maria Eduarda Martins</h1>
+            <p class="cabecalho-sub-titulo">
+                Desenvolvedora Full Stack focada em criar soluções modernas e eficientes.
+            </p>
+
+            <div class="botoes">
+                <a href="#projetos" class="btn btn-primario">Ver Projetos</a>
+                <a href="#contatos" class="btn btn-secundario">Contato</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- SOBRE + EXPERIÊNCIA -->
+    <section class="sobre-experiencia">
+        <div class="container-duplo">
+
+            <div class="card">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonada por tecnologia e desenvolvimento web.
+                    Busco me tornar uma Desenvolvedora Full Stack, criando soluções modernas, funcionais e bem estruturadas.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Experiência</h2>
+                <h3>Consultora de E-commerce</h3>
+                <ul>
+                    <li>Automação de estoque com integração de APIs</li>
+                    <li>Monitoramento de produtos best sellers</li>
+                    <li>Integração de sistemas e plataformas digitais</li>
+                    <li>Otimização de processos operacionais</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- TECNOLOGIAS -->
+        <div class="card tecnologias">
+            <h2>Tecnologias</h2>
+
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-node"></i>
+                    <span>Node.js</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+
+        <div class="projetos-grid">
+            <div class="card">
+                <img src="./img/site seu closet.png" alt="Projeto Loja de Roupas">
+                <div class="card-conteudo">
+                    <h3>Loja Virtual de Roupas</h3>
+                    <p>
+                        E-commerce moderno com foco em performance,
+                        experiência do usuário e design responsivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contatos" class="contato">
+        <h2>Vamos conversar?</h2>
+
+        <form id="formContato" class="formulario">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">
+                <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+            </button>
+        </form>
+    </section>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5512981815787" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPT WHATSAPP -->
+    <script>
+    document.getElementById("formContato").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let nome = document.getElementById("nome").value;
+        let mensagem = document.getElementById("mensagem").value;
+
+        let texto = `Olá, me chamo ${nome}. ${mensagem}`;
+        let numero = "5512981815787";
+
+        let url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank");
+    });
+    </script>
+
+</body>
+</html>
