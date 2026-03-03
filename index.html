@@ -1,89 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Eduarda Martins | Desenvolvedora Full Stack</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maria Eduarda Martins | Desenvolvedora Full Stack</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <nav class="navegacao">
-        <div class="nav-container">
-            <h2 class="logo">M<span>.</span>dev</h2>
-            <ul class="menu">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contatos" class="btn-nav">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-container">
+        <h2 class="logo">M<span>.</span>dev</h2>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato" class="btn-nav">Contato</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <main id="inicio" class="hero-modern">
-        <div class="hero-content">
-            <div class="foto-wrapper">
-                <img src="maria.png" alt="Maria Eduarda" class="foto-perfil">
-                <div class="foto-glow"></div>
-            </div>
-            <span class="badge">Disponível para novos projetos</span>
-            <h1>Maria Eduarda <span>Martins</span></h1>
-            <p>Transformando ideias em experiências digitais de alto impacto através de código limpo e design intuitivo.</p>
-            <div class="botoes">
-                <a href="#projetos" class="btn-glow">Conhecer Projetos</a>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </main>
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="hero-content">
 
-    <section id="sobre" class="sobre-modern">
-        <div class="container">
-            <div class="glass-card main-about">
-                <div class="about-text">
-                    <h2>Minha Jornada</h2>
-                    <p>Estudante de ADS com foco em arquitetura de sistemas. Minha transição do e-commerce para o desenvolvimento me deu uma visão única sobre <strong>conversão e performance</strong>.</p>
-                </div>
-                <div class="tech-stack-mini">
-                    <div class="tech-pill"><i class="fab fa-react"></i> React</div>
-                    <div class="tech-pill"><i class="fab fa-node-js"></i> Node.js</div>
-                    <div class="tech-pill"><i class="fab fa-js"></i> TypeScript</div>
-                    <div class="tech-pill"><i class="fas fa-database"></i> SQL</div>
-                </div>
-            </div>
+        <div class="foto-wrapper">
+            <img src="maria.png" class="foto-perfil">
+            <div class="glow"></div>
         </div>
-    </section>
 
-    <section id="projetos" class="projetos-modern">
-        <div class="container">
-            <div class="section-header">
-                <h2>Projetos Selecionados</h2>
-                <div class="line"></div>
-            </div>
-            
-            <div class="projetos-grid-v2">
-                <div class="projeto-card">
-                    <div class="projeto-img">
-                        <img src="site-seu-closet.png" alt="E-commerce">
-                        <div class="projeto-overlay">
-                            <a href="#" class="view-btn">Ver Projeto <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <span class="proj-category">E-commerce / Full Stack</span>
-                        <h3>Seu Closet Digital</h3>
-                        <p>Integração de pagamentos e painel administrativo personalizado.</p>
-                    </div>
-                </div>
+        <span class="badge">Disponível para novos projetos</span>
+
+        <h1>Maria Eduarda <span>Martins</span></h1>
+
+        <p>Transformando ideias em experiências digitais modernas através de código limpo e design estratégico.</p>
+
+        <div class="hero-buttons">
+            <a href="#projetos" class="btn-primary">Conhecer Projetos</a>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-    </section>
+
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section">
+    <div class="container">
+
+        <div class="card about-grid">
+
+            <div>
+                <h2>Sobre Mim</h2>
+                <p>
+                    Estudante de ADS com foco em desenvolvimento Full Stack e arquitetura de sistemas.
+                    Apaixonada por performance, UI moderna e código escalável.
+                </p>
+            </div>
+
+            <div>
+                <h2>Experiência com E-commerce</h2>
+                <p>
+                    Minha transição do e-commerce me trouxe visão estratégica sobre conversão,
+                    funil de vendas, experiência do usuário e performance digital.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="card stack">
+            <h2>Minhas Tecnologias</h2>
+
+            <div class="stack-grid">
+                <div class="stack-item"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="stack-item"><i class="fab fa-html5"></i> HTML</div>
+                <div class="stack-item"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="stack-item"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="stack-item"><i class="fab fa-react"></i> React</div>
+                <div class="stack-item"><i class="fas fa-database"></i> SQL</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos" class="section">
+    <div class="container">
+
+        <h2 class="section-title">Projetos Selecionados</h2>
+
+        <div class="projetos-grid">
+
+            <div class="projeto-card">
+                <img src="site-seu-closet.png">
+                <div class="projeto-info">
+                    <span>E-commerce Full Stack</span>
+                    <h3>Seu Closet Digital</h3>
+                    <p>Integração de pagamentos e painel administrativo.</p>
+                </div>
+            </div>
+
+            <div class="projeto-card">
+                <img src="site-seu-closet.png">
+                <div class="projeto-info">
+                    <span>Landing Page</span>
+                    <h3>Projeto Modern UI</h3>
+                    <p>Layout estratégico focado em conversão.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="section">
+    <div class="container">
+
+        <div class="card contato">
+            <h2>Entre em Contato</h2>
+
+            <form onsubmit="enviarWhats(event)">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <textarea id="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5512981815787" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+function enviarWhats(e){
+    e.preventDefault();
+    const nome = document.getElementById("nome").value;
+    const mensagem = document.getElementById("mensagem").value;
+    const texto = `Olá, meu nome é ${nome}. ${mensagem}`;
+    const url = `https://wa.me/5512981815787?text=${encodeURIComponent(texto)}`;
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
 
 
